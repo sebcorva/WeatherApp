@@ -1,0 +1,173 @@
+body {
+    background-image: radial-gradient( circle 855px at -5.3% 49%,  rgba(2,65,97,1) 0%, rgb(10, 71, 91) 41.3%, rgb(51, 78, 80) 100.2% );
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(226, 226, 226);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:50%;
+    height: 100%;
+    min-height: 300px;
+    background-image: linear-gradient( 111.5deg,  rgba(228,247,255,1) 21.9%, rgba(255,216,194,1) 92.2% );
+    border-radius: 15px;
+    padding-top: 1rem;
+    transition: all 0.5s ease;
+}
+
+.container.day {
+    background-image: linear-gradient(111.5deg, rgba(228,247,255,1) 21.9%, rgba(255,216,194,1) 92.2%);
+    color: rgb(85, 85, 85);
+}
+
+.container.day::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, #fffa86 0%, #f1c40f 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(241, 196, 15, 0.6);
+}
+
+.container.night {
+    background-image: linear-gradient(111.5deg, #2c3e50 20%, #000000 90%);
+    color: rgb(186, 186, 186);
+}
+
+.container.night::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: #ecf0f1;
+    border-radius: 50%;
+    /* Efecto de cráteres con sombras internas */
+    box-shadow: 
+        inset -10px -10px 0px #bdc3c7,
+        0 0 20px rgba(236, 240, 241, 0.3);
+}
+
+.container > * {
+    position: relative;
+    z-index: 2;
+}
+
+p {
+    font-weight: 400;
+}
+.dataStyle.day {
+    color: rgb(7, 7, 53);
+    font-weight: 400;
+}
+
+.dataStyle.night {
+    color: rgb(238, 238, 238);
+    font-weight: 400;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.loadingMessage {
+    color: white;
+    font-size: 2rem;
+    font-weight:bold;
+}
+
+.containerApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorMessage {
+    color: rgb(13, 9, 42);
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-image: linear-gradient( 111.5deg,  rgba(228,247,255,1) 21.9%, rgba(255,216,194,1) 92.2% );
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #b0a617, #6a640f);
+  color: ghostwhite;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 7px;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
