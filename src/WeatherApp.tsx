@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import SearchBar from "./components/SearchBar"
 import WeatherResult from "./components/WeatherResult"
@@ -24,6 +25,7 @@ export  function WeatherApp({}: Props) {
         { (weather && !isLoading) && (
           <WeatherResult weather={weather} />
         )}
+        <Footer/>
     </div>
   )
 }

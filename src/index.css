@@ -171,3 +171,26 @@ p {
   transform: scale(0.95);
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;       
+    left: 0;        
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: rgb(13, 24, 46);
+}
+
+.footer a {
+    color: rgb(5, 14, 34);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #567a9f;
+    text-decoration: underline;
+}
