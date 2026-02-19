@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WeatherApp > Should render the component properly 1`] = `
+<div>
+  <div
+    class="containerApp"
+  >
+    <div>
+      <h1>
+        Revisa el clima
+      </h1>
+    </div>
+    <form
+      aria-label="form"
+      class="searchBar"
+    >
+      <input
+        placeholder="Busca una ciudad"
+        type="text"
+        value=""
+      />
+      <button
+        class="cssbuttons-io"
+        type="submit"
+      >
+        <span>
+          <svg
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          Buscar
+        </span>
+      </button>
+    </form>
+    <div
+      class="footer"
+    >
+      <p>
+        Created by 
+        <a
+          href="https://github.com/sebcorva"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          @Sebastian Corvalan
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

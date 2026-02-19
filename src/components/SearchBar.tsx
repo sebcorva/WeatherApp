@@ -23,7 +23,7 @@ export default function SearchBar({placeHolder, buttonText, onSearch}: Props) {
 
   return (
 
-    <form onSubmit={onSubmit} className="searchBar">
+    <form onSubmit={onSubmit} className="searchBar" aria-label="form">
         <input 
           type="text" 
           placeholder={placeHolder}

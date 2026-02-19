@@ -12,7 +12,7 @@ export  function WeatherApp({}: Props) {
 
   return (
     <div className="containerApp">
-        <Header title="Checkea el clima"/>
+        <Header title="Revisa el clima"/>
         <SearchBar 
           buttonText="Buscar" 
           placeHolder="Busca una ciudad"
