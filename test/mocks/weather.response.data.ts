@@ -1,0 +1,51 @@
+export const searchWeatherResponseMock = {
+    "location": {
+        "name": "Beijing",
+        "region": "Beijing",
+        "country": "China",
+        "lat": 39.929,
+        "lon": 116.388,
+        "tz_id": "Asia/Shanghai",
+        "localtime_epoch": 1771877522,
+        "localtime": "2026-02-24 04:12"
+    },
+    "current": {
+        "last_updated_epoch": 1771876800,
+        "last_updated": "2026-02-24 04:00",
+        "temp_c": -4.8,
+        "temp_f": 23.4,
+        "is_day": 0,
+        "condition": {
+            "text": "Clear",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+            "code": 1000
+        },
+        "wind_mph": 3.1,
+        "wind_kph": 5.0,
+        "wind_degree": 50,
+        "wind_dir": "NE",
+        "pressure_mb": 1022.0,
+        "pressure_in": 30.18,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 53,
+        "cloud": 0,
+        "feelslike_c": -7.1,
+        "feelslike_f": 19.3,
+        "windchill_c": -2.5,
+        "windchill_f": 27.5,
+        "heatindex_c": -0.8,
+        "heatindex_f": 30.6,
+        "dewpoint_c": -9.8,
+        "dewpoint_f": 14.4,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 0.0,
+        "gust_mph": 4.7,
+        "gust_kph": 7.6,
+        "short_rad": 0,
+        "diff_rad": 0,
+        "dni": 0,
+        "gti": 0
+    }
+}

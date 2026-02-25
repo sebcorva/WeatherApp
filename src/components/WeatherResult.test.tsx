@@ -21,4 +21,12 @@ describe('WeatherResult', () => {
         expect(screen.getByText(/19 de febrero/i)).toBeDefined();
         expect(screen.getByText(/10:00/i)).toBeDefined();
     });
-})
+
+    test('should render day class when is_day is true', () => {
+
+    });
+
+    test('should render night class when is_day is false', () => {
+
+    });
+});
